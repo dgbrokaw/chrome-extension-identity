@@ -1,0 +1,21 @@
+{
+	"manifest_version": 2,
+	"name": "Chrome Identity Test Extension",
+	"version": "0.1",
+
+	"browser_action": {
+		"default_icon": "spiderman-head-icon-png-12.png",
+		"default_title": "Your Identity"
+	},
+
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": false
+	},
+
+	"permissions": [
+		"tabs",
+		"http://*/*",
+		"https://*/*"
+	]
+}
