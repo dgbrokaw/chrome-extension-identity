@@ -26,3 +26,5 @@ Steps to use google chrome identity API for an unpacked extension:
 19. Add "https://www.googleapis.com/auth/userinfo.email" to the scopes array property of the "oauth2" declaration
 20. Add "identity" and "identity.email" to the permissions
 21. You should now be able to use the "getAuthToken" identity method in the background script/event script (set "interactive" to true in the method options).
+
+For an already packaged extension, I'm guessing we already have a private key.  We should *also* have and app ID, which I believe is displayed in the url of the extension's page on the app store.
