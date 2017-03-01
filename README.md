@@ -5,7 +5,7 @@ I've left out the manifest now, because I don't know if I should be including my
 
 Steps to use google chrome identity API for an unpacked extension:
 
-1. For an unpacked extension: go to chrome://extensions/ and click "Pack extension..."
+1. Go to chrome://extensions/ and click "Pack extension..."
 2. This will save a .crx file and a .pem file to your computer
 3. Back up the .pem file, DO NOT LOSE IT
 4. Copy the key from the .pem file, and put it in your manifest as the "key."
