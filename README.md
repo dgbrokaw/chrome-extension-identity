@@ -4,6 +4,7 @@ Testing the chrome.identity permission &amp; API
 I've left out the manifest now, because I don't know if I should be including my extension client id in a public repo.
 
 Steps to use google chrome identity API for an unpacked extension:
+
 1) For an unpacked extension: go to chrome://extensions/ and click "Pack extension..."
 2) This will save a .crx file and a .pem file to your computer.  
 3) Back up the .pem file, DO NOT LOSE IT
