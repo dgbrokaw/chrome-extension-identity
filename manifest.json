@@ -1,0 +1,38 @@
+{
+	"key": KEY,
+	"manifest_version": 2,
+	"name": "Chrome Identity Test Extension",
+	"version": "0.1",
+
+	"browser_action": {
+		"default_icon": "spiderman-head-icon-png-12.png",
+		"default_title": "Your Identity"
+		// "default_popup": "popup.html"
+	},
+
+	"background": {
+		"scripts": ["background.js"],
+		"persistant": false
+	},
+
+  "content_scripts": [
+		{
+			"matches": ["http://*/*", "https://*/*", "file://*/*"],
+			"js": ["main.js"],
+			"all_frames": false
+		}
+	],
+
+	"permissions": [
+		"tabs",
+		"identity",
+		"identity.email",
+		"http://*/*",
+		"https://*/*"
+	],
+
+	"oauth2": {
+		"client_id": CLIENT_ID,
+		"scopes": ["https://www.googleapis.com/auth/userinfo.email"]
+	}
+}
